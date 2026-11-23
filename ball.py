@@ -51,4 +51,6 @@ class Ball:
             if not self.stopped:  # 날아가던 공이 땅에 닿으면 땅 위에 멈춘다
                 self.stopped = True
                 self.y = other.get_bb()[3] + self.radius  # 잔디 윗면에 올려놓기
-            
+        elif group == 'zombie:ball':
+                    if not self.stopped:  # 날아가던 공이 땅에 닿으면 땅 위에 멈춘다
+                        pass
